@@ -1,0 +1,35 @@
+.upload-container {
+          margin-bottom: 1.5rem;
+        }
+
+        .upload-label {
+          color: #fff;
+          font-size: 0.875rem;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+
+        .upload-box {
+          width: 100%;
+          padding: 1.5rem;
+          border: 2px dashed #ec4899;
+          border-radius: 0.5rem;
+          text-align: center;
+          color: #fff;
+          cursor: pointer;
+          background-color: #1c1b2d;
+        }
+
+        .upload-box:hover {
+          background-color: #25233b;
+        }
+
+        .file-input {
+          display: none;
+        }
+
+        .upload-hint {
+          color: #9ca3af;
+          font-size: 0.75rem;
+          margin-top: 0.5rem;
+        }
