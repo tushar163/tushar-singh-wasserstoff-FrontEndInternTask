@@ -1,0 +1,175 @@
+.ticket-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to bottom right, #0a0a23, #1a0442); */
+  padding: 1.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.event-title {
+  color: #ec4899;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.congrats-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .congrats-heading {
+    font-size: 1.875rem;
+  }
+}
+
+.name-highlight {
+  color: #f472b6;
+}
+
+.confirmation-message {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.email-highlight {
+  color: #f9a8d4;
+}
+
+.ticket-card {
+  background-color: #1c1b2d;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 28rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.ticket-main {
+  padding: 1.5rem;
+  flex: 1;
+  position: relative;
+}
+
+.ticket-main::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-right: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.ticket-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.event-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.025em;
+}
+
+.event-date-location {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.attendee-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.attendee-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f472b6;
+}
+
+.attendee-name {
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.github-username {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.ticket-stub {
+  width: 60px;
+  background-color: #1c1b2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.stub-content {
+  color: #f472b6;
+  font-weight: 700;
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.stub-notch {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(to bottom right, #0a0a23, #1a0442);
+  border-radius: 50%;
+}
+
+.top-notch {
+  top: -12px;
+  right: -12px;
+}
+
+.bottom-notch {
+  bottom: -12px;
+  right: -12px;
+}

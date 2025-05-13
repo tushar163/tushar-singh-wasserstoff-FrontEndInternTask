@@ -1,0 +1,110 @@
+/* Root font & reset */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 1. Overall background with gradient, grid + rings + vignette */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #0a0a23;
+  background-image:
+    /* main gradient */
+    linear-gradient(to bottom right, #0a0a23, #1a0442),
+    /* subtle grid (tiny dots) */
+    repeating-radial-gradient(circle at center,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 100px),
+    /* peach ring bottom-left */
+    radial-gradient(circle at bottom left,
+      rgba(251,207,232,0.2) 0%,
+      transparent 50%),
+    /* glow curve top-right */
+    radial-gradient(circle at top right,
+      rgba(251,207,232,0.15) 0%,
+      transparent 50%);
+  background-blend-mode: normal, overlay, normal, normal;
+  overflow: hidden;
+}
+.page-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* vignette */
+  background: radial-gradient(circle,
+    transparent 60%,
+    rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+/* 2. Header / Logo */
+.page-header {
+  position: absolute;
+  top: 1rem;
+  /* left: 1rem; */
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.logo-icon {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  color: #db2777;
+}
+.logo-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* 3. Form card */
+.form-card {
+  position: relative;
+  z-index: 1;
+  /* background-color: rgba(18,16,38,0.85); */
+  backdrop-filter: blur(6px);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  /* box-shadow: 0 10px 25px rgba(0,0,0,0.5); */
+  width: 100%;
+  max-width: 28rem;
+  color: #ffffff;
+}
+
+/* 6. Typography */
+.form-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.form-subtext {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 5. Button */
+.form-button {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #db2777;
+  color: #ffffff;
+  padding: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-button:hover {
+  background-color: #be185d;
+}
