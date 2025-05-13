@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Real-Time Collaborative Editor
 
-## Getting Started
+A basic real-time text editor built using **React**, **TypeScript**, **TailwindCSS**, **TipTap**, and **Yjs**. Multiple users can edit the same document simultaneously, with visible live updates and user indicators.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🖋️ Real-time collaborative editing
+- 🌐 Multi-tab/browser sync using **Socket.IO**
+- 👤 User identity and presence (name + color)
+- 💬 Live cursor positions with usernames
+- 🛠️ Rich-text formatting via **TipTap** (bold, italic, lists, undo/redo)
+
+---
+
+## 📸 Demo
+
+Live Link: [https://your-live-url.com](https://your-live-url.com)  
+Try it in multiple tabs to test real-time sync!
+
+---
+
+## 📦 Tech Stack
+
+- **ReactJS** with **TypeScript**
+- **TailwindCSS** for UI
+- **TipTap** (ProseMirror-based rich text editor)
+- **Yjs** for shared CRDT document state
+- **Socket.IO** for real-time transport
+- **tippy.js** for tooltip/cursor rendering
+
+---
+
+## 🔧 Installation
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/realtime-editor.git
+cd realtime-editor
+
+# Install dependencies
+npm install
+
+# Start the client
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
